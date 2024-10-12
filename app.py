@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, send_from_directory
 import os
 
-app = Flask(__name__, static_folder='build', static_url_path='/')
+app = Flask(__name__, static_folder='react-calendar-app/build', static_url_path='/')
 
 @app.route('/api/hello', methods=['GET'])
 def hello():
