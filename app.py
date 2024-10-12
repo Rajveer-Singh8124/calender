@@ -5,7 +5,7 @@ app = Flask(__name__, static_folder='react-calendar-app/build', static_url_path=
 
 @app.route('/api/hello', methods=['GET'])
 def hello():
-    return jsonify(message="Hello from Flask!")
+    return jsonify(message="")
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
